@@ -1,0 +1,53 @@
+
+<html>
+<head>
+    <title>Complaint Submission Page</title>
+</head>
+<body>
+
+    <h1>Customer Complaint Submission</h1>
+    <h2>We Value Your Feedback</h2>
+
+    <h3>Why Submit a Complaint?</h3>
+    <p>Your feedback helps us improve our services. If you have experienced any issues, please let us know so we can resolve them promptly.</p>
+
+    <h3>Submit Your Complaint</h3>
+    <form action="submit_complaint.php" method="post">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="category">Complaint Category:</label><br>
+        <select id="category" name="category" required>
+            <option value="billing">Billing Issue</option>
+            <option value="service">Poor Service</option>
+            <option value="product">Product Defect</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="details">Complaint Details:</label><br>
+        <textarea id="details" name="details" rows="5" required></textarea><br><br>
+
+        <input type="submit" value="Submit Complaint">
+    </form>
+
+    <h3>Common Complaints We Address</h3>
+    <ul>
+        <li>Delayed Response from Customer Support</li>
+        <li>Incorrect Billing Charges</li>
+        <li>Defective or Damaged Products</li>
+        <li>Unprofessional Staff Behavior</li>
+        <li>Slow or Interrupted Service</li>
+    </ul>
+    <h3>Need More Help?</h3>
+    <p>Visit our help center for more information and support.</p>
+    <a href="https://www.example.com/help-center" target="_blank">Go to Help Center</a>
+
+</body>
+</html>
+
+
+
+
